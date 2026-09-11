@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  /* Base palette — inspirado na identidade da Clinic Ruby (Instagram) */
+  --color-ivory: #f9f4ee;      /* fundo principal, marfim quente */
+  --color-ivory-deep: #f1e9df; /* seções alternadas */
+  --color-ink: #221a17;        /* texto principal, preto quente */
+  --color-wine: #5c1a28;       /* bordô — cor de destaque primária */
+  --color-wine-deep: #3b0f19;  /* bordô escuro, hovers/fundos ricos */
+  --color-gold: #b28a4d;       /* dourado/champagne — detalhes, linhas, ícones */
+  --color-gold-light: #ddc190; /* dourado claro — sobre fundos escuros */
+  --color-blush: #efe0da;      /* rosa suave — apoio, fundos delicados */
+
+  --font-display: "Cormorant", serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-ivory: var(--color-ivory);
+  --color-ivory-deep: var(--color-ivory-deep);
+  --color-ink: var(--color-ink);
+  --color-wine: var(--color-wine);
+  --color-wine-deep: var(--color-wine-deep);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-blush: var(--color-blush);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-wine);
+  color: var(--color-ivory);
+}
+
+/* Foco visível para acessibilidade */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-wine);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
