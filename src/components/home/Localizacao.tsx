@@ -14,6 +14,27 @@ export function Localizacao() {
             Petrolina — PE
           </p>
 
+          <dl className="mt-8 grid gap-5 border-t border-gold/20 pt-6 sm:grid-cols-2">
+            <div>
+              <dt className="font-body text-xs uppercase tracking-[0.14em] text-wine/70">
+                Horário de funcionamento
+              </dt>
+              <dd className="mt-1 font-body text-sm text-ink/65">
+                Segunda a sexta — a confirmar
+                <br />
+                Sábado — a confirmar
+              </dd>
+            </div>
+            <div>
+              <dt className="font-body text-xs uppercase tracking-[0.14em] text-wine/70">
+                Estacionamento
+              </dt>
+              <dd className="mt-1 font-body text-sm text-ink/65">
+                Vagas disponíveis no Trade Center
+              </dd>
+            </div>
+          </dl>
+
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="https://www.google.com/maps/search/?api=1&query=Trade+Center+Petrolina+PE"

@@ -3,7 +3,9 @@ import { Hero } from "@/components/home/Hero";
 import { Sobre } from "@/components/home/Sobre";
 import { Servicos } from "@/components/home/Servicos";
 import { Profissionais } from "@/components/home/Profissionais";
+import { Equipe } from "@/components/home/Equipe";
 import { Localizacao } from "@/components/home/Localizacao";
+import { Contato } from "@/components/home/Contato";
 import { Footer } from "@/components/home/Footer";
 import { MobileActionBar } from "@/components/home/MobileActionBar";
 import { RubyAssistenteButton } from "@/components/home/RubyAssistenteButton";
@@ -17,7 +19,9 @@ export default function Home() {
         <Sobre />
         <Servicos />
         <Profissionais />
+        <Equipe />
         <Localizacao />
+        <Contato />
       </main>
       <Footer />
       <RubyAssistenteButton />
